@@ -1,17 +1,26 @@
 {
-  "name": "backend",
+  "name": "taskora-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Taskora backend API",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development node --watch src/server.js",
+    "start": "cross-env NODE_ENV=production node src/server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "taskora",
+    "backend",
+    "api",
+    "nodejs",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "cross-env": "^10.0.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
   }
 }
+
