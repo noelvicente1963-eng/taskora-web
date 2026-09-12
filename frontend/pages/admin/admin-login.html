@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taskora Admin Login</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Taskora Styles -->
+    <link rel="stylesheet" href="../../styles/admin/admin-login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <section class="login-container">
+
+            <!-- Brand -->
+            <header class="brand">
+
+                <h1>Taskora</h1>
+
+                <h2>
+                    <span>Admin</span>
+                    <strong>Login</strong>
+                </h2>
+
+                <!-- Background Logo -->
+                <img
+                    src="../../photos/admin/taskora-logo.jpg"
+                    class="background-logo"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+            </header>
+
+
+            <!-- Login Form -->
+            <form id="loginForm" novalidate>
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <div class="input-container">
+
+                        <span class="input-icon" aria-hidden="true">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group password-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-container">
+
+                        <span class="input-icon" aria-hidden="true">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="eye-button"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Message -->
+                <p
+                    id="message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+
+                <!-- Sign In -->
+                <button
+                    type="submit"
+                    class="sign-in-button"
+                >
+                    Sign in
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Scripts -->
+    <script src="../../scripts/admin/admin-login.js"></script>
+    <script src="../../scripts/admin/admin-animations.js"></script>
+
+</body>
+
+</html>
